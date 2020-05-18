@@ -12,6 +12,9 @@ def mitosis_classes():
 def ki67_classes():
     return ['positive', 'negative', 'stromal', 'lymphocyte']
 
+def ki67NEC_classes():
+    return ['positive', 'negative', 'stromal', 'lymphocyte', 'normal']
+
 
 def ki67mask_classes():  # ki67 mask
     return ['positive', 'negative', 'stromal', 'lymphocyte']
@@ -115,6 +118,7 @@ dataset_aliases = {
     'cityscapes': ['cityscapes'],
     'mitosis': ['voc', 'pascal_voc', 'voc07', 'voc12'],  # mitosis
     'ki67': ['voc', 'pascal_voc', 'voc07', 'voc12'],  # ki67
+    'ki67NEC': ['voc', 'pascal_voc', 'voc07', 'voc12'],  # ki67_NEC
     'ki67mask': ['coco', 'mscoco', 'ms_coco'],  # ki67 mask
 }
 
